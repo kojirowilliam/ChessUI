@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c05780;
+}
+
+.board-container {
+  width: 600px;
+  height: 600px;
+}
+
+.board {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 12.5%;
+  height: 12.5%;
+}
+
+.promote-square {
+  width:50%;
+  height: 50%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.square-black {
+  background: #ff828b;
+}
+
+.square-white {
+  background: #e7c582;
+}
+
+.board-square {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.piece-container {
+  cursor: grab;
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.piece {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.poss-move-container {
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.poss-move {
+  opacity: 1;
+  filter: brightness(100%);
+  filter: contrast(100%);
+}
+
+.vertical-text {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  font-family: sans-serif;
+  padding: 10px;
+  color: whitesmoke;
+}
+
+.vertical-text button {
+  margin-top: 20px;
+  cursor: pointer;
+  background: rebeccapurple;
+  opacity: 0.5;
+  border: 2px solid white;
+  border-radius: 10px;
+}
