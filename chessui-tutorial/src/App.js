@@ -19,21 +19,30 @@ function App() {
     return () => subscribe.unsubscribe();
   }, []);
   return (
-    <div className="wrapper">
-        <div className="container">
+      <div className="container">
+        <div className="header">
+          <h1>AI CHESS</h1>
+        </div>
+        <div className="opponent-score">
+        <h1>Opponent Side</h1>
+        </div>
+        <div className="game">
           {isGameOver && (
-            <h2 className="vertical-text">
+            <h2 className="game-text">
               GAMEOVER
               <button onClick={resetGame}>
-                <span className="vertical-text">NEW GAME</span>
+                <span className="game-text">NEW GAME</span>
               </button>
             </h2>
           )}
           <div className="board-container">
             <Board board={board} turn={turn}/>
           </div>
-          {result && <p className="vertical-text">{result}</p>}
-      </div>
+          {result && <p className="game-text">{result}</p>}
+        </div>
+        <div className="your-score">
+          <h1>Your Side</h1>
+        </div>
     </div>
   );
 }
