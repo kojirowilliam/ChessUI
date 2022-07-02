@@ -23,8 +23,12 @@ function App() {
         <div className="header">
           <h1>AI CHESS</h1>
         </div>
-        <div className="opponent-score">
-        <h1>Opponent Side</h1>
+        <div className="opponent-side">
+        <h2>Opponent Side</h2>
+        <div>
+          <h3>Opponent Type</h3>
+        </div>
+        <h3>Moves</h3>
         </div>
         <div className="game">
           {isGameOver && (
